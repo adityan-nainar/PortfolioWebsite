@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800&family=Rubik:wght@300;400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+*::selection{
+    color: #e8e8e8;
+    background-color: black;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#hero{
+    min-height: 100vh;
+    width : 100%;
+    background-color: #e8e8e8;
+}
+#navbar{
+    padding: 30px 30px;
+    padding-right: 50px;
+    display: flex;
+    /* position: fixed; */
+    /* top: 0; */
+    justify-content: space-between;
+}
+
+#links{
+    display: flex;
+    gap: 20px;
+}
+#links h3{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#maintitle{
+    background-color: #e8e8e8;
+    padding-left: 4vw;
+}
+
+#maintitle h1{
+    font-size: 13vw;
+    text-transform: uppercase;
+    padding-top: 7vh;
+    line-height: 8vw;
+    letter-spacing: -7px;
+}
+
+#two {
+    padding-left: 10vw;
+    width: fit-content;
+}
+
+#maintitle h2{
+    font-size: 1.8vw;
+    font-weight: 400;
+}
+#small_text{
+    text-align: end;
+    padding-right: 10vw;
+}
+
+#videoContainer{
+    height: 100vh;
+    width: 100%;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+#videoContainer video{
+    width: 80%;
+}
+
+#play{
+    text-align: center;
+    padding: 3vw 2vw;
+    background-color: black;
+    color: #e8e8e8;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    position: fixed;
+    border-radius: 100%;
+    opacity: 0%;
+    scale: 0;
+}
+
+.cursor{
+    opacity: 1;
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background:#e8e8e8;
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+h1:hover ~ #cursor1{
+    transform: scale(12);
+} 
+
+a:any-link{
+    color: black;
+    text-decoration: none;
+}
+
+#navbar h3{
+    padding-bottom: 0;
+}
+
+.underlineHover{
+    display: inline-block;
+    position: relative;
+}
+
+.underlineHover::before{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    width: 0;
+    height: 1.5px;
+    background-color: grey;
+    transition: width 0.5s ease-in-out;
+}
+
+.underlineHover:hover::before{
+    width: 100%;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    width: 50%;
+    height: 10px;
+    background-color: #3c4142;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
